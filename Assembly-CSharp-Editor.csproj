@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9C979A41-4913-2B4A-F479-47703B088B05}</ProjectGuid>
+    <ProjectGuid>{961F57DA-FB5B-B9FA-6FAA-87496939E56C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -60,37 +60,37 @@
      <Compile Include="Assets\ThirdPersonController\Editor\ThirdPersonControllerMovementEditor.cs" />
      <Compile Include="Assets\ExplosiveLLC\Editor\SetupInputLayers.cs" />
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/benja/Downloads/mapa del juego3/ZenlessGame/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/benja/Downloads/mapa del juego3/ZenlessGame/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/benja/Downloads/mapa del juego3/ZenlessGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/benja/Downloads/mapa del juego3/ZenlessGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/benja/Downloads/mapa del juego3/ZenlessGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/benja/Downloads/mapa del juego3/ZenlessGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/benja/Downloads/mapa del juego3/ZenlessGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/benja/Downloads/mapa del juego3/ZenlessGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/benja/Downloads/mapa del juego3/ZenlessGame/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/benja/Downloads/mapa del juego3/ZenlessGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/benja/Downloads/mapa del juego3/ZenlessGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -282,7 +282,7 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/benja/Downloads/mapa del juego3/ZenlessGame/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -632,15 +632,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{705D297D-2529-BA0F-1249-2E97423FEF7C}</Project>
+      <Project>{16631960-292C-4784-AC10-38924AD33ACB}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{86D8B972-26C8-283B-1339-FEA592D3E22F}</Project>
+      <Project>{0A00AA2B-A65E-AF07-9A3D-2786E8A04C2C}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{7F27006D-B01A-9323-9488-09932678D53C}</Project>
+      <Project>{FE17F4AD-B4B8-275B-1556-24025666DF87}</Project>
       <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

@@ -2616,7 +2616,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f76806479d916a64aa03f8e3eba7912f, type: 3}
   m_Name: 
@@ -2839,6 +2839,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8277391309422779562, guid: 040dff65f2390294da18c8725f4be265, type: 3}
   m_PrefabInstance: {fileID: 1650492216}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1087927837 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8277391309422779607, guid: 040dff65f2390294da18c8725f4be265, type: 3}
+  m_PrefabInstance: {fileID: 1650492216}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087927833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae829c91bd6f6e4ca2bf2d83766343a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1087927840 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8277391309422779604, guid: 040dff65f2390294da18c8725f4be265, type: 3}
@@ -3284,6 +3295,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6254500354240950228, guid: f191ea3b6dbaeb447b734498544cc3e5, type: 3}
+      propertyPath: thirdPerson
+      value: 
+      objectReference: {fileID: 1087927837}
     - target: {fileID: 6254500354378072722, guid: f191ea3b6dbaeb447b734498544cc3e5, type: 3}
       propertyPath: m_Name
       value: INTERFAZ
@@ -3972,6 +3987,10 @@ PrefabInstance:
       propertyPath: model
       value: 
       objectReference: {fileID: 100050, guid: e57e9b8cd5e115f4f8d7736473e5c7fd, type: 3}
+    - target: {fileID: 2860570902479342115, guid: 040dff65f2390294da18c8725f4be265, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6374411971956900605, guid: 040dff65f2390294da18c8725f4be265, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.46099854
@@ -4037,6 +4056,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8277391309422779607, guid: 040dff65f2390294da18c8725f4be265, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958065601595040017, guid: 040dff65f2390294da18c8725f4be265, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}

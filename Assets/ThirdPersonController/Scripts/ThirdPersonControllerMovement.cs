@@ -9,7 +9,7 @@ using UnityEngine.Serialization;
 public class ThirdPersonControllerMovement : MonoBehaviour
 {
     public static ThirdPersonControllerMovement s;
-    
+    public bool cameraLock = false;
     private Rigidbody _rb;
     
     #region Camera
@@ -108,13 +108,25 @@ public class ThirdPersonControllerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //cameraLock
         Cursor.lockState = CursorLockMode.Locked;
+        Debug.Log("inicio bloqueado") ;
         _cm.SetCameraToOrigin();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //cameraLock
+        if (cameraLock == true){
+        Cursor.lockState = CursorLockMode.Locked;
+        //Debug.Log("bloqueado") ;
+        }
+        else{
+        Cursor.lockState = CursorLockMode.None;  
+        Debug.Log("desbloqueado") ; 
+        }
+
         PlayerStateMachine();
         if (Input.GetKeyDown(KeyCode.Space) && run != true) {
             Debug.Log("Jump!");
@@ -127,6 +139,14 @@ public class ThirdPersonControllerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         
+    }
+    public void UnlockCursor()//Si el cursor esta falso se habilita su uso
+    {
+        cameraLock = false;
+    }
+    public void LockCursor()//Si el cursor esta activo se deshabilita su uso
+    {
+        cameraLock = true;
     }
 
     private void MovePlayer() {

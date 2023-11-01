@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class MenuPausa : MonoBehaviour
 {
     [SerializeField] private GameObject menuPausa;
-
+    public ThirdPersonControllerMovement thirdPerson;
     private bool juegoPausado = false;
+   // private ThirdPersonControllerMovement camara;
 
     private void Update()
     {
@@ -26,9 +27,14 @@ public class MenuPausa : MonoBehaviour
 
     public void Pausa()
     {
-        juegoPausado = true;
-        Time.timeScale = 0f;
+        thirdPerson = GetComponent<ThirdPersonControllerMovement>();
+        thirdPerson.UnlockCursor();
+        Debug.Log("se unlockea la camara");
+        //juegoPausado = true;
+        //Time.timeScale = 0f;
         menuPausa.SetActive(true);
+        //pepe camara = GetComponent("ThirdPersonCameraMovement") as pepe;
+        //Debug.Log(camara.CursorEnable());
     }
     
     public void Reanudar()
@@ -36,6 +42,8 @@ public class MenuPausa : MonoBehaviour
         juegoPausado = false;
         Time.timeScale = 1f;
         menuPausa.SetActive(false);
+        thirdPerson = GetComponent<ThirdPersonControllerMovement>();
+        thirdPerson.LockCursor();
     }
 
     public void Controles()
