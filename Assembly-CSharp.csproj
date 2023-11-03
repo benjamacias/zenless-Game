@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{54E5C8BA-4807-4833-60C0-626FF008F023}</ProjectGuid>
+    <ProjectGuid>{529E5808-2CC5-DCAF-7BFD-2DEB8575CFB1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,11 +60,13 @@
      <Compile Include="Assets\ExplosiveLLC\SuperCharacterController\Code\Examples\PlayerMachine.cs" />
      <Compile Include="Assets\ExplosiveLLC\SuperCharacterController\Code\Examples\PlayerInputController.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\GetHit.cs" />
+     <Compile Include="Assets\Player\ColocarTrampa.cs" />
      <Compile Include="Assets\comportamientos.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Extensions\ControllerExtensions.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Lookups\Animations\DiveRollType.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\zombies\moneda.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterWeaponController.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\IKHands.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Lookups\Animations\AnimatorTrigger.cs" />
@@ -72,12 +74,17 @@
      <Compile Include="Assets\ExplosiveLLC\SuperCharacterController\Code\Core\SuperCollisionType.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\AnimationData.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Lookups\Weapon.cs" />
+     <Compile Include="Assets\Menu\Scripts\MainMenu.cs" />
      <Compile Include="Assets\comportamiento.cs" />
      <Compile Include="Assets\ExplosiveLLC\SuperCharacterController\Code\DebugDraw.cs" />
+     <Compile Include="Assets\zombies\zombieAttack.cs" />
+     <Compile Include="Assets\zombies\zombieHealth.cs" />
+     <Compile Include="Assets\zombies\ControladorZombie.cs" />
      <Compile Include="Assets\ThirdPersonController\Scripts\ThirdPersonModelConfig.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Actions\BaseActionHandler.cs" />
      <Compile Include="Assets\Game\Scripts\ThirdPersonaCamera.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\NPC\LogicaNpc.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Extensions\WeaponExtensions.cs" />
      <Compile Include="Assets\Game\Scripts\BalaControl.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Lookups\Animations\HitType.cs" />
@@ -98,7 +105,9 @@
      <Compile Include="Assets\Game\Scripts\ArmaControl.cs" />
      <Compile Include="Assets\Control.cs" />
      <Compile Include="Assets\ExplosiveLLC\SuperCharacterController\Code\Examples\SimpleStateMachine.cs" />
+     <Compile Include="Assets\zombies\zombieMovement.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Lookups\AnimationParameters.cs" />
+     <Compile Include="Assets\Menu\Scripts\MenuPausa.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Demo Elements\Code\GUIControls.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
@@ -141,13 +150,16 @@
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\spawner.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets\Trampas\Fuego.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\ExplosiveLLC\SuperCharacterController\Code\Core\SuperGround.cs" />
+     <Compile Include="Assets\Player\valorvidaP.cs" />
      <Compile Include="Assets\ExplosiveLLC\SuperCharacterController\Code\Examples\PlayerMachineDebug.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Fall.cs" />
+     <Compile Include="Assets\Trampas\AlambreElectrico.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\RPGCharacterMovementController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
@@ -162,14 +174,20 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Lookups\Animations\Side.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+     <Compile Include="Assets\zombies\paredmortal.cs" />
      <Compile Include="Assets\ExplosiveLLC\SuperCharacterController\Code\Examples\Gravity.cs" />
+     <Compile Include="Assets\Trampas\Explosiva.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+     <Compile Include="Assets\Trampas\Alambre.cs" />
+     <Compile Include="Assets\Trampas\TrampaOso.cs" />
+     <Compile Include="Assets\zombies\Puerta.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\Idle.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Lookups\AnimatorWeapon.cs" />
      <Compile Include="Assets\ExplosiveLLC\SuperCharacterController\Code\Core\IgnoredCollider.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+     <Compile Include="Assets\zombies\ZombieBaba.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Actions\Movement\HitContext.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Actions\SimpleActionHandler.cs" />
@@ -178,31 +196,17 @@
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Actions\Null.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Lookups\Animations\KnockdownType.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Extensions\CollectionExtensions.cs" />
+     <Compile Include="Assets\zombies\Baba.cs" />
      <Compile Include="Assets\ExplosiveLLC\SuperCharacterController\Code\Core\SuperCharacterController.cs" />
      <Compile Include="Assets\ExplosiveLLC\SuperCharacterController\Code\Core\SuperCollision.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Demo Elements\Code\NoJumpSlime.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Actions\Character\AttackContext.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\Lookups\Animations\UnarmedAttack.cs" />
      <Compile Include="Assets\ExplosiveLLC\RPG Character Mecanim Animation Pack FREE\Code\AnimationVariations.cs" />
-     <Compile Include="Assets\Player\ColocarTrampa.cs" />
-     <Compile Include="Assets\Menu\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\zombies\ControladorZombie.cs" />
-     <Compile Include="Assets\NPC\LogicaNpc.cs" />
-     <Compile Include="Assets\Menu\Scripts\MenuPausa.cs" />
-     <Compile Include="Assets\Trampas\Fuego.cs" />
-     <Compile Include="Assets\Player\valorvidaP.cs" />
-     <Compile Include="Assets\Trampas\AlambreElectrico.cs" />
-     <Compile Include="Assets\Trampas\Explosiva.cs" />
-     <Compile Include="Assets\Trampas\Alambre.cs" />
-     <Compile Include="Assets\Trampas\TrampaOso.cs" />
-     <Compile Include="Assets\zombies\zombieAttack.cs" />
-     <Compile Include="Assets\zombies\zombieHealth.cs" />
-     <Compile Include="Assets\zombies\zombieMovement.cs" />
-     <Compile Include="Assets\zombies\Puerta.cs" />
-     <Compile Include="Assets\zombies\ZombieBaba.cs" />
-     <Compile Include="Assets\zombies\Baba.cs" />
-     <Compile Include="Assets\zombies\moneda.cs" />
-     <Compile Include="Assets\zombies\paredmortal.cs" />
+     <Compile Include="Assets\Player\inventario\ManejoInventario.cs" />
+     <Compile Include="Assets\Player\inventario\Item.cs" />
+     <Compile Include="Assets\Player\inventario\Inventario.cs" />
+     <Compile Include="Assets\Player\inventario\itemPick.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -230,31 +234,31 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/benja/Documents/zenless-Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/benja/Documents/zenless-Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/benja/Documents/zenless-Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/benja/Documents/zenless-Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/benja/Documents/zenless-Game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/benja/Documents/zenless-Game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/benja/Documents/zenless-Game/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/benja/Documents/zenless-Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/benja/OneDrive/Desktop/mapa del juego zip/mapa del juego/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/benja/Documents/zenless-Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -787,7 +791,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{705D297D-2529-BA0F-1249-2E97423FEF7C}</Project>
+      <Project>{05EB84CF-916E-98E9-4BB8-0CE89763A201}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
