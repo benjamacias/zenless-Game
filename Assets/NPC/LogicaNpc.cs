@@ -17,24 +17,31 @@ public class LogicaNpc : MonoBehaviour
         panelCompra.SetActive(false);
     }
 
-    // Update se llama una vez por frame
-    void Update()
+    //Update se llama una vez por frame
+   void Update()
+{
+    if (Input.GetKeyDown(KeyCode.F))
     {
-        if (Input.GetKeyDown(KeyCode.F) && !interfazAbierta)
+        if (!panelCompra.activeSelf) // Verifica si panelCompra está desactivado
         {
-           
             panel1.SetActive(false);
             panelCompra.SetActive(true);
             Time.timeScale = 0f;
         }
+        else
+        {
+            Volver();
+        }
     }
+}
 
-    public void Volver()
-    {
-        Time.timeScale = 1f;
-        panelCompra.SetActive(false);
-        panel1.SetActive(true);
-    }
+public void Volver()
+{
+    Time.timeScale = 1f;
+    panelCompra.SetActive(false);
+    panel1.SetActive(true);
+}
+
 
     private void OnTriggerEnter(Collider other)
     {

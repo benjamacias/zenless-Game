@@ -12,7 +12,7 @@ public class zombieHealth : MonoBehaviour
 
     Animator anim;
 
-    moneda item;
+    //moneda item;
 
     
     
@@ -20,7 +20,7 @@ public class zombieHealth : MonoBehaviour
     {
    currentHealth = maxHealth;
    anim = GetComponent<Animator>();
-   item = GetComponent<moneda>();
+   //item = GetComponent<moneda>();
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ public void TakeDamage(int amount){
     isDead = true;
     anim.SetTrigger("death");
     Destroy(gameObject, 2);
-    item.itemDropped();
+    //item.itemDropped();
  }
  
 }

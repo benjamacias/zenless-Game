@@ -15,7 +15,7 @@ public class zombieMovement : MonoBehaviour
 
     void Start()
     {
-        puerta = GameObject.FindGameObjectWithTag("Puerta");
+        //puerta = GameObject.FindGameObjectWithTag("Puerta");
         player = GameObject.FindGameObjectWithTag("Player"); //Busca en toda la scena al objeto con el tag player y lo guarda.
         agent = GetComponent<NavMeshAgent>(); //Se busca el componente NavMeshAgent del gameobject adjunto.
         anim = GetComponent<Animator>(); //Se busca el componente Amimator del gameobject adjunto.

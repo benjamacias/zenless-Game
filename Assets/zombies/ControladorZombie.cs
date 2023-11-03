@@ -7,6 +7,7 @@ public class ControladorZombie : MonoBehaviour
 {
     private float originalSpeed;
     private float slowTimer;
+    private float stunTimer;
     private float bleedTimer;
     private float burnTimer;
     private int burnDamagePerSecond = 5;
@@ -29,6 +30,14 @@ public class ControladorZombie : MonoBehaviour
         float duration = 5.0f;
         GetComponent<NavMeshAgent>().speed = originalSpeed * factor;
         slowTimer = duration;
+        StartCoroutine(RestoreSpeedAfterDelay(duration));
+    }
+
+    public void ApplyStunEffect(float factor)
+    {
+        float duration = 5.0f;
+        GetComponent<NavMeshAgent>().speed = factor;
+        stunTimer = duration;
         StartCoroutine(RestoreSpeedAfterDelay(duration));
     }
 

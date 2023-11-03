@@ -14,15 +14,14 @@ public class ColocarTrampa : MonoBehaviour
     private GameObject trampaSeleccionada; // Muestra la trampa seleccionada
     private GameObject trampaColocada; // Coloca la trampa seleccionada
 
-    // Start se llama antes del primer frame
-    void Start()
+    public void Start()
     {
         DesactivarTodasLasTrampas();
         interfazColocacion.SetActive(false);
     }
 
     // Desactivar todas las trampas
-    void DesactivarTodasLasTrampas()
+    public void DesactivarTodasLasTrampas()
     {
         trampa1.SetActive(false);
         trampa2.SetActive(false);
@@ -31,8 +30,7 @@ public class ColocarTrampa : MonoBehaviour
         trampa5.SetActive(false);
     }
 
-    // Update se llama una vez por frame
-    void Update()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -89,7 +87,7 @@ public class ColocarTrampa : MonoBehaviour
         }
     }
 
-    void ColocarTrampaSeleccionada()
+    public void ColocarTrampaSeleccionada()
     {
         if (trampaSeleccionada != null)
         {
