@@ -47,7 +47,7 @@ public class ControladorZombie : MonoBehaviour
     {
         isDead = true;
         anim.SetTrigger("death");
-        Destroy(gameObject, 2);
+        Destroy(gameObject, 1);
     }
 
     public void ApplySlowEffect(float factor)

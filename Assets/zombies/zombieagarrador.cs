@@ -15,6 +15,7 @@ public class zombieagarrador : MonoBehaviour
     float frecuenciaDisparo = 3f;
     private bool lenguaExtendida = false;
     private float tiempoUltimoDisparo = 0f;
+    public bool agarrado = false;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,7 @@ public class zombieagarrador : MonoBehaviour
         if (lenguaExtendida)
         {
         ArrastraJugador();
+         agarrado = true;
         }
     }
     void ExtendLengua()
