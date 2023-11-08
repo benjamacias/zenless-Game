@@ -35,6 +35,6 @@ public class valorvidaP : MonoBehaviour
         if(currentHealth <= 0)Dead();}
     private void Dead(){
         isDead = true;
-        anim.SetTrigger("deaht");
+        anim.SetTrigger("death");
     }
 }

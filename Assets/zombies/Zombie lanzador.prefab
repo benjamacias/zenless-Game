@@ -1128,7 +1128,6 @@ GameObject:
   - component: {fileID: 2691217481324905817}
   - component: {fileID: 2691217481324905813}
   - component: {fileID: 2691217481324905812}
-  - component: {fileID: 2691217481324905819}
   - component: {fileID: 7378774849588690431}
   m_Layer: 0
   m_Name: Zombie lanzador
@@ -1222,21 +1221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 0
---- !u!114 &2691217481324905819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4463117177164636135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37e364e3bac6b1a4ea92d2e51881796d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: -1
-  currentHealth: 0
-  isDead: 0
 --- !u!114 &7378774849588690431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1250,7 +1234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 0
-  proyectilPrefab: {fileID: 0}
+  proyectilPrefab: {fileID: 8960630792799097221, guid: 6a85d628d9f571e498047c3090d3aac5, type: 3}
   puntoDisparo: {fileID: 7378774850288296970}
   player: {fileID: 0}
   frecuenciaDisparo: 3

@@ -9,7 +9,7 @@ public class Fuego : MonoBehaviour
     public int burnDamage = 5; // Daño por fuego
     public float burnDuration = 5.0f; // Duración del fuego
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("zombie"))
         {

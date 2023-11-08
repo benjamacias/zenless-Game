@@ -15,14 +15,15 @@ public class LogicaNpc : MonoBehaviour
     {
         simboloTienda.SetActive(true);
         panelCompra.SetActive(false);
+        jugadorCerca = false;
     }
 
     //Update se llama una vez por frame
    void Update()
 {
-    if (Input.GetKeyDown(KeyCode.F))
+    if (Input.GetKeyDown(KeyCode.F) && jugadorCerca == true)
     {
-        if (!panelCompra.activeSelf) // Verifica si panelCompra está desactivado
+        if (!panelCompra.activeSelf)
         {
             panel1.SetActive(false);
             panelCompra.SetActive(true);

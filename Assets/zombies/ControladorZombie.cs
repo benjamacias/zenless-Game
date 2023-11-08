@@ -1,10 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.AI;
 
 public class ControladorZombie : MonoBehaviour
 {
+    public int maxHealth; // Vida máxima del zombie
+    public int currentHealth; // Vida actual del zombie
+    public bool isDead; 
+    private bool damage;
+    private Animator anim;
     private float originalSpeed;
     private float slowTimer;
     private float stunTimer;
@@ -13,16 +19,35 @@ public class ControladorZombie : MonoBehaviour
     private int burnDamagePerSecond = 5;
     private float burnDuration = 5.0f;
 
-    private zombieHealth healthScript;
-
     private void Start()
     {
         originalSpeed = GetComponent<NavMeshAgent>().speed;
         slowTimer = 0.0f;
         bleedTimer = 0.0f;
         burnTimer = 0.0f;
+        isDead = false;
 
-        healthScript = GetComponent<zombieHealth>();
+        currentHealth = maxHealth;
+        anim = GetComponent<Animator>();
+    }
+
+    public void TakeDamage(int amount)
+    {
+        if (isDead)return;
+
+        currentHealth -= amount;
+
+        if (currentHealth <= 0)
+        {
+            Death();
+        }
+    }
+
+    public void Death()
+    {
+        isDead = true;
+        anim.SetTrigger("death");
+        Destroy(gameObject, 2);
     }
 
     public void ApplySlowEffect(float factor)
@@ -57,7 +82,7 @@ public class ControladorZombie : MonoBehaviour
     {
         while (bleedTimer > 0)
         {
-            healthScript.TakeDamage(damage);
+            TakeDamage(damage);
             yield return new WaitForSeconds(1.0f);
             bleedTimer -= 1.0f;
         }
@@ -67,13 +92,13 @@ public class ControladorZombie : MonoBehaviour
     {
         while (burnTimer > 0)
         {
-            healthScript.TakeDamage(damage);
+            TakeDamage(damage);
             yield return new WaitForSeconds(1.0f);
             burnTimer -= 1.0f;
         }
     }
 
-    private IEnumerator RestoreSpeedAfterDelay(float delay)
+    public IEnumerator RestoreSpeedAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         GetComponent<NavMeshAgent>().speed = originalSpeed;
