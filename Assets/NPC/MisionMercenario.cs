@@ -46,7 +46,7 @@ public class MisionMercenario : MonoBehaviour
         zombiesmision2.SetActive(false);
         misionCompletada.SetActive(false);
         segundaParteMision.SetActive(false);
-        mercenario.SetActive(false);
+        //mercenario.SetActive(false);
     }
 
     //Update se llama una vez por frame

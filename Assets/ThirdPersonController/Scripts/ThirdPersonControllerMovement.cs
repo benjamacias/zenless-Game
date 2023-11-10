@@ -117,11 +117,19 @@ public class ThirdPersonControllerMovement : MonoBehaviour
     {
         PlayerStateMachine();
         if (Input.GetKeyDown(KeyCode.Space) && run != true) {
-            Debug.Log("Jump!");
             run = true;
         }
         else{
             run=false;
+        }
+
+        if (!movementEnabled)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
     private void FixedUpdate()

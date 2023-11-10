@@ -169,7 +169,6 @@ GameObject:
   - component: {fileID: 657017670077806728}
   - component: {fileID: 657017670077806724}
   - component: {fileID: 657017670077806729}
-  - component: {fileID: -1637468201136914047}
   m_Layer: 0
   m_Name: Zombie oleada
   m_TagString: Untagged
@@ -262,19 +261,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 2
   attackDamage: 10
---- !u!114 &-1637468201136914047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1276558771400909366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd30c08cf7a33a140ac32a2031b5750d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 100
 --- !u!1 &1284230240406666048
 GameObject:
   m_ObjectHideFlags: 0

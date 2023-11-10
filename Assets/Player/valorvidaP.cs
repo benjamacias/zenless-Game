@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,34 +6,97 @@ public class valorvidaP : MonoBehaviour
 {
     public int maxHealth;
     public int currentHealth;
-    bool isDead;
-    bool damage;
+    public bool isDead;
+    bool isCountingDown;
     public Slider slider;
     Animator anim;
+    public GameObject pantallaReaparecer;
+    public float tiempoInicial; // Tiempo inicial en segundos
+    private float tiempoRestante;
+    public Text textoCuentaRegresiva; // Referencia al texto en pantalla
+    public GameObject boton;
+    public Transform Respawn;
+    public GameObject zombieagarrar;
+    private zombieagarrador lengua; 
 
-    // Start is called before the first frame update
+
+
     void Start()
     {
         currentHealth = maxHealth;
         slider.maxValue = maxHealth;
         slider.value = maxHealth;
-
+        pantallaReaparecer.SetActive(false);
         anim = GetComponent<Animator>();
+        tiempoRestante = tiempoInicial;
+        isDead = false;
+        lengua = zombieagarrar.GetComponent<zombieagarrador>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (isCountingDown)
+        {
+            MostrarTiempo();
+        }
     }
-    public void TakeDamage(int amount){
-        if (isDead == true)return;
-        damage = true;
+
+    public void TakeDamage(int amount)
+    {
+        if (isDead) return;
+
         currentHealth -= amount;
         slider.value = currentHealth;
-        if(currentHealth <= 0)Dead();}
-    private void Dead(){
+
+        if (currentHealth <= 0)
+        {
+            Dead();
+        }
+    }
+
+    private void MostrarTiempo()
+    {
+        textoCuentaRegresiva.text = tiempoRestante.ToString();
+
+        if (tiempoRestante <= 0)
+        {
+            textoCuentaRegresiva.gameObject.SetActive(false);
+            boton.SetActive(true);
+            isCountingDown = false;
+        }
+    }
+
+    public void Dead()
+    {
         isDead = true;
         anim.SetTrigger("death");
+        pantallaReaparecer.SetActive(true);
+        GetComponent<ThirdPersonControllerMovement>().DisableMovement();
+        StartCoroutine(IniciarCuentaRegresiva());
+        boton.SetActive(false);
+    }
+
+    public IEnumerator IniciarCuentaRegresiva()
+    {
+        isCountingDown = true;
+
+        while (tiempoRestante > 0)
+        {
+            yield return new WaitForSeconds(1);
+            tiempoRestante--;
+        }
+
+        boton.SetActive(true);
+    }
+
+    public void Reaparecer()
+    {
+        transform.position = Respawn.position;
+        lengua.ArrastraDeshabilitado();
+        boton.SetActive(false);
+        pantallaReaparecer.SetActive(false);
+        Start();
+        GetComponent<ThirdPersonControllerMovement>().EnableMovement();
+
     }
 }

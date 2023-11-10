@@ -9,6 +9,7 @@ public class LogicaNpc : MonoBehaviour
     public bool interfazAbierta;
     public GameObject panel1;
     public GameObject panelCompra;
+    public ThirdPersonControllerMovement cameraEnable;
 
     // Start se llama antes del primer frame
     void Start()
@@ -28,6 +29,7 @@ public class LogicaNpc : MonoBehaviour
             panel1.SetActive(false);
             panelCompra.SetActive(true);
             Time.timeScale = 0f;
+            cameraEnable.DisableMovement();
         }
         else
         {
@@ -36,12 +38,13 @@ public class LogicaNpc : MonoBehaviour
     }
 }
 
-public void Volver()
-{
-    Time.timeScale = 1f;
-    panelCompra.SetActive(false);
-    panel1.SetActive(true);
-}
+    public void Volver()
+    {
+        Time.timeScale = 1f;
+        panelCompra.SetActive(false);
+        panel1.SetActive(true);
+        cameraEnable.EnableMovement();
+    }
 
 
     private void OnTriggerEnter(Collider other)

@@ -9,16 +9,13 @@ public class DanioBala : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     { 
-        Debug.Log("1");
         if (other.gameObject.CompareTag("zombie"))
         {
             foreach (GameObject tipozombie in zombiePrefab)
             {
-                Debug.Log("si le toy pegando");
                 ControladorZombie zombie = other.gameObject.GetComponent<ControladorZombie>();
                 if (zombie != null)
                 {
-                    Debug.Log("aplicando danio");
                     zombie.TakeDamage(danioBala);
                 }
             }

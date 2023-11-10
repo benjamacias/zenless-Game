@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class ColocarTrampa : MonoBehaviour
 {
+    public GameObject interfaztrampa1; // Trampa de Oso
+    public GameObject interfaztrampa2; // Trampa de Alambre
+    public GameObject interfaztrampa3; // Trampa Eléctrica
+    public GameObject interfaztrampa4; // Trampa de Fuego
+    public GameObject interfaztrampa5; // Trampa Explosiva
     public GameObject trampa1; // Trampa de Oso
     public GameObject trampa2; // Trampa de Alambre
     public GameObject trampa3; // Trampa Eléctrica
     public GameObject trampa4; // Trampa de Fuego
-    public GameObject trampa5; // Trampa Explosiva
+    public GameObject trampa5;
     public GameObject interfazColocacion;
     public bool interfazColocacionActiva;
     private GameObject trampaSeleccionada; // Muestra la trampa seleccionada
@@ -23,11 +28,16 @@ public class ColocarTrampa : MonoBehaviour
     // Desactivar todas las trampas
     public void DesactivarTodasLasTrampas()
     {
-        trampa1.SetActive(false);
-        trampa2.SetActive(false);
-        trampa3.SetActive(false);
-        trampa4.SetActive(false);
-        trampa5.SetActive(false);
+        interfaztrampa1.SetActive(false);
+        interfaztrampa2.SetActive(false);
+        interfaztrampa3.SetActive(false);
+        interfaztrampa4.SetActive(false);
+        interfaztrampa5.SetActive(false);
+        trampa1.SetActive(true);
+        trampa2.SetActive(true);
+        trampa3.SetActive(true);
+        trampa4.SetActive(true);
+        trampa5.SetActive(true);
     }
 
     public void Update()
@@ -52,31 +62,31 @@ public class ColocarTrampa : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 DesactivarTodasLasTrampas();
-                trampa1.SetActive(true);
+                interfaztrampa1.SetActive(true);
                 trampaSeleccionada = trampa1;
             }
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 DesactivarTodasLasTrampas();
-                trampa2.SetActive(true);
+                interfaztrampa2.SetActive(true);
                 trampaSeleccionada = trampa2;
             }
             else if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 DesactivarTodasLasTrampas();
-                trampa3.SetActive(true);
+                interfaztrampa3.SetActive(true);
                 trampaSeleccionada = trampa3;
             }
             else if (Input.GetKeyDown(KeyCode.Alpha4))
             {
                 DesactivarTodasLasTrampas();
-                trampa4.SetActive(true);
+                interfaztrampa4.SetActive(true);
                 trampaSeleccionada = trampa4;
             }
             else if (Input.GetKeyDown(KeyCode.Alpha5))
             {
                 DesactivarTodasLasTrampas();
-                trampa5.SetActive(true);
+                interfaztrampa5.SetActive(true);
                 trampaSeleccionada = trampa5;
             }
 

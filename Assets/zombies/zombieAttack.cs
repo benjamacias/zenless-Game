@@ -8,7 +8,7 @@ public class zombieAttack : MonoBehaviour
     public int attackDamage;
     GameObject player;
     valorvidaP playerHealth;
-    zombieHealth zombieHealth;
+
     bool playerInRage;
     float timer;
     Animator anim;
@@ -41,7 +41,7 @@ public class zombieAttack : MonoBehaviour
     public void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= timeBetweenAttacks && playerInRage && !zombieController.isDead)
+        if (timer >= timeBetweenAttacks && playerInRage && zombieController.isDead == false)
         {
             Attack();
         }

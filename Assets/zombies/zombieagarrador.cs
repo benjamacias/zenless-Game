@@ -13,14 +13,18 @@ public class zombieagarrador : MonoBehaviour
     public Transform puntoDisparo;
     public Transform player;
     float frecuenciaDisparo = 3f;
-    private bool lenguaExtendida = false;
+    public bool lenguaExtendida = false;
     private float tiempoUltimoDisparo = 0f;
     public bool agarrado = false;
+    
+    public void ArrastraDeshabilitado() { lenguaExtendida = false; } 
 
     // Start is called before the first frame update
     void Start()
     {
+        
         player = GameObject.FindWithTag("Player").transform;
+        
 
     }
 
@@ -30,15 +34,16 @@ public class zombieagarrador : MonoBehaviour
         distancePlayer =  Vector3.Distance(transform.position, player.transform.position);
         if ( distance >= distancePlayer && !lenguaExtendida)
         {
-             ExtendLengua();     
+            ExtendLengua();     
         }
         if (lenguaExtendida)
         {
         ArrastraJugador();
-         agarrado = true;
+            agarrado = true;
         }
+
     }
-    void ExtendLengua()
+    public void ExtendLengua()
     {
         Vector3 direccionAlJugador = (player.position - puntoDisparo.position).normalized;
         

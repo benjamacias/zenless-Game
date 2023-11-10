@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine;
 
 public class ThirdPersonCameraMovement : MonoBehaviour
-{
+{    
     private Camera _cam;
 
     public enum CAMERA_TYPE { FREE_LOOK, LOCKED }
@@ -155,9 +155,7 @@ public class ThirdPersonCameraMovement : MonoBehaviour
             _cam.transform.LookAt(trueLookAt);
         }
     }
-
     
-
     public Camera GetCamera() { return _cam ? _cam : Camera.main; }
 
     private void OnDrawGizmosSelected()

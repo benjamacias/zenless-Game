@@ -30,7 +30,7 @@ public class zombieolaeadamovement : MonoBehaviour
     void Update()
     {
         if (player != null && puerta != null){
-            //playerMuerto = player.GetComponent<valorvidaP>().isDead;
+            playerMuerto = player.GetComponent<valorvidaP>().isDead;
             distancePuerta = Vector3.Distance(transform.position, puerta.transform.position);
             distancePlayer =  Vector3.Distance(transform.position, player.transform.position);
        
