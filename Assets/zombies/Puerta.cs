@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Puerta : MonoBehaviour
-{
+{ // GameObject puerta - cierra y abre la puerta//
     public GameObject puertaCerrada;
     public GameObject puertaAbierta;
     public ThirdPersonControllerMovement cameraEnable;

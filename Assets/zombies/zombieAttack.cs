@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class zombieAttack : MonoBehaviour
 {
+    // GameObject zombie - Ataque del zombie a melee //
     public float timeBetweenAttacks;
     public int attackDamage;
     GameObject player;

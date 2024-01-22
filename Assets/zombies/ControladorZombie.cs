@@ -6,8 +6,10 @@ using UnityEngine.AI;
 
 public class ControladorZombie : MonoBehaviour
 {
+    // GameObject todos los zombie - Con ella tenemos la vida y los efectos de los desbuffos //
     public int maxHealth; // Vida máxima del zombie
     public int currentHealth; // Vida actual del zombie
+    public GameObject corazonPrefab;
     public bool isDead; 
     private bool damage;
     private Animator anim;
@@ -48,6 +50,7 @@ public class ControladorZombie : MonoBehaviour
         isDead = true;
         anim.SetTrigger("death");
         Destroy(gameObject, 1);
+        GameObject corazon = Instantiate(corazonPrefab, transform.position, transform.rotation);
     }
 
     public void ApplySlowEffect(float factor)

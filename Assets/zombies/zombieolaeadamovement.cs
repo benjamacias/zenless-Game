@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class zombieolaeadamovement : MonoBehaviour
 {
-
+// GameObject zombie y zombie baba oleada - Comportamiento del zombie generado por la oleada //
 
     float distancePlayer;
     public float distance;

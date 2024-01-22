@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OleadasDeZombies : MonoBehaviour
 {
+    // GamObject Controlador de zombies - Genera las oleadas de los zombies cuando se cumple un horario  especifico //
     public GameObject[] zombiePrefab;
     public GameObject[] puntosDeSpawn;
     public int cantidadEnemigos;
@@ -12,6 +13,7 @@ public class OleadasDeZombies : MonoBehaviour
     bool ocurrioLaOleada = false;
     public int tipoDeEnemigo;
     public float nocheStart;   // La hora en la que se considera que comienza la noche.
+    //(19 hs * 60(segudos q dura el dia) / 24hs) el rusultado sobre 60
     public float nocheEnd;      // La hora en la que se considera que termina la noche.
     private ciclodiaynoche tiempoDia;
     public GameObject sol;

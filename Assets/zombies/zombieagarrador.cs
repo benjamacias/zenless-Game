@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class zombieagarrador : MonoBehaviour
 {
+    // GameObject zombie agarrador - genera una fuerza hacia el zombie cuando el player entra a un cierto rango //
     public float fuerzaAtraccion;
     //private Vector3 puntoDeAgarre;
     float distancePlayer;

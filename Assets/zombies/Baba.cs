@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Baba : MonoBehaviour
 {
+    // GameObject baba - propiedad de la baba que dispara el zombie // 
     GameObject player;
     valorvidaP playerHealth;
 

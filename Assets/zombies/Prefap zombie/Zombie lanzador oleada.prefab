@@ -678,6 +678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   currentHealth: 50
+  corazonPrefab: {fileID: 4463816584748624473, guid: 556ec00f625ff7c40bdfba71b4976f64, type: 3}
   isDead: 0
 --- !u!114 &2133652620312008398
 MonoBehaviour:

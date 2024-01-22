@@ -5,9 +5,9 @@ using UnityEngine;
 public class ciclodiaynoche : MonoBehaviour
 {
     public Light solyluna; // Luz del sol o luna.
-    public float diaDuracion = 300.0f; // Duración de un día en segundos.
+    public float diaDuracion; // Duración de un día en segundos.
     public float tiempoDelDia = 0.0f;     // Hora del día en segundos.
-    private int diasContador = 1;           // Contador de días.
+    private int diasContador = 1;          // Contador de días.
 
     // Start is called before the first frame update
     void Start()

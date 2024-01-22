@@ -67,7 +67,10 @@ MonoBehaviour:
   - {fileID: 6599605019623186973, guid: 8d29cfadf615b10479fc3b64b9fdfba5, type: 3}
   - {fileID: 4463117177164636135, guid: 45cc82a03eab36b4caa7e299650ff3a0, type: 3}
   - {fileID: 4127650737873289983, guid: 062acb12392abaa41822e3d35df1be1f, type: 3}
-  danioBala: 5
+  - {fileID: 5895423722886274199, guid: 810f15bcdb770dd4fa8184b20764a944, type: 3}
+  - {fileID: 854074026395451360, guid: 68e8076008e4f8f4eb94fc0b906487c7, type: 3}
+  - {fileID: 7196964599343809833, guid: 71abea5f04f325445b80d36c367254a7, type: 3}
+  danioBala: 20
 --- !u!114 &652370921381059224
 MonoBehaviour:
   m_ObjectHideFlags: 0

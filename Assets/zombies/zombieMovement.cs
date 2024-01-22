@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class zombieMovement : MonoBehaviour
 {
+    // GameObject zombie y zombie baba - Comportamineto del movimiento del zombie //
     float distancePlayer;
     public float distance;
     GameObject player; //Variable del tipo GameObject.

@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class ZombieAgarradorMovimiento : MonoBehaviour
 {
+    // GameObject zombie agarrador - Movimiento del zombie agarrador 
     float distancePlayer;
     public float distance;
     GameObject player; //Variable del tipo GameObject.
@@ -42,7 +43,7 @@ public class ZombieAgarradorMovimiento : MonoBehaviour
             }  
             else if ( distance >= distancePlayer)
             {
-                //UnityEngine.AI.NavMeshAgent.SetDestination(player.transform.position);
+
                 agent.SetDestination(player.transform.position); // si player no es nulo configura el destino del agente NavMeshAgent para que se dirija a la posición actual del player.
                 animating(); //Llamo a la funcion
             
